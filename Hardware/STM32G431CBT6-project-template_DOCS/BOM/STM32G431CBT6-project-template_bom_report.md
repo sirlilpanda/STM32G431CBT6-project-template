@@ -1,6 +1,6 @@
 # BOM for STM32G431CBT6-project-template_bill_of_material
 
-report created at 05:38:22.090966 on 12-11-2024.
+report created at 06:17:13.491149 on 12-11-2024.
 
 STM32G431CBT6-project-template_bill_of_material has a total of 43 parts with a cost of $0.
 
