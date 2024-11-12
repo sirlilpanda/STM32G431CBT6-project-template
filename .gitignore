@@ -29,3 +29,5 @@ Hardware/*/*.xml
 Hardware/*/*.csv
 
 __pycache__/
+
+Software/build/
