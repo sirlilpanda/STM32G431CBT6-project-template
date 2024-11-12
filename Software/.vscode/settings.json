@@ -1,11 +1,14 @@
 {
     "files.associations": {
+        "*.txt": "cmake",
         "cmsis_gcc.h": "c",
         "cmsis_compiler.h": "c",
         "usb_device.h": "c",
         "usbd_def.h": "c",
         "ucpd.h": "c",
-        "usart.h": "c"
+        "usart.h": "c",
+        "main.h": "c",
+        "cstdint": "c"
     },
     "C_Cpp.default.compilerPath": "/usr/bin/arm-none-eabi-gcc"
 }

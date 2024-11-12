@@ -31,7 +31,7 @@
 #ifndef __CORE_CM4_H_GENERIC
 #define __CORE_CM4_H_GENERIC
 
-#include <stdint.h>
+#include "stdint.h"
 
 #ifdef __cplusplus
  extern "C" {
@@ -1635,7 +1635,7 @@ typedef struct
 #define EXC_RETURN_THREAD_MSP_FPU  (0xFFFFFFE9UL)     /* return to Thread mode, uses MSP after return, restore floating-point state  */
 #define EXC_RETURN_THREAD_PSP_FPU  (0xFFFFFFEDUL)     /* return to Thread mode, uses PSP after return, restore floating-point state  */
 
-
+#include "stm32g431xx.h"
 /**
   \brief   Set Priority Grouping
   \details Sets the priority grouping field using the required unlock sequence.
@@ -1946,16 +1946,6 @@ __NO_RETURN __STATIC_INLINE void __NVIC_SystemReset(void)
 }
 
 /*@} end of CMSIS_Core_NVICFunctions */
-
-
-/* ##########################  MPU functions  #################################### */
-
-#if defined (__MPU_PRESENT) && (__MPU_PRESENT == 1U)
-
-#include "mpu_armv7.h"
-
-#endif
-
 
 /* ##########################  FPU functions  #################################### */
 /**

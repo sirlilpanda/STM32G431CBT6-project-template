@@ -8,8 +8,8 @@
   *          is using in the C source code, usually in main.c. This file contains:
   *           - Configuration section that allows to select:
   *              - The STM32G4xx device used in the target application
-  *              - To use or not the peripheral’s drivers in application code(i.e.
-  *                code will be based on direct access to peripheral’s registers
+  *              - To use or not the peripheralï¿½s drivers in application code(i.e.
+  *                code will be based on direct access to peripheralï¿½s registers
   *                rather than drivers API), this option is controlled by
   *                "#define USE_HAL_DRIVER"
   *
@@ -107,35 +107,7 @@
   * @{
   */
 
-#if defined(STM32G431xx)
-  #include "stm32g431xx.h"
-#elif defined(STM32G441xx)
-  #include "stm32g441xx.h"
-#elif defined(STM32G471xx)
-  #include "stm32g471xx.h"
-#elif defined(STM32G473xx)
-  #include "stm32g473xx.h"
-#elif defined(STM32G483xx)
-  #include "stm32g483xx.h"
-#elif defined(STM32G474xx)
-  #include "stm32g474xx.h"
-#elif defined(STM32G484xx)
-  #include "stm32g484xx.h"
-#elif defined(STM32G491xx)
-  #include "stm32g491xx.h"
-#elif defined(STM32G4A1xx)
-  #include "stm32g4a1xx.h"
-#elif defined(STM32GBK1CB)
-  #include "stm32gbk1cb.h"
-#elif defined(STM32G411xB)
-  #include "stm32g411xb.h"
-#elif defined(STM32G411xC)
-  #include "stm32g411xc.h"
-#elif defined(STM32G414xx)
-  #include "stm32g414xx.h"
-#else
-  #error "Please select first the target STM32G4xx device used in your application (in stm32g4xx.h file)"
-#endif
+#include "stm32g431xx.h"
 
 /**
   * @}
