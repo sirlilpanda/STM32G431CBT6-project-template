@@ -11,16 +11,16 @@ jobs:
   setup_new_project:
     runs-on: ubuntu-latest
     name: set up project 
-    if : ${{ github.repository != 'sirlilpanda/kicad-project-template' }}
+    if : ${{ github.repository != 'sirlilpanda/STM32G431CBT6-project-template' }}
     steps:
       - name: Checkout
         uses: actions/checkout@v4
 
       - name: read-yaml-file
-        uses: pietrobolcato/action-read-yaml@1.0.0
+        uses: juliojimenez/yamler@v1.1.0
         id: yaml
         with:
-          config: ${{ github.workspace }}/project_settings.yaml
+          yaml-file: ${{ github.workspace }}/project_settings.yaml
 
       - name: Setting up Python and chevron to processes failed reports
         # workflows really need some more work done on them
