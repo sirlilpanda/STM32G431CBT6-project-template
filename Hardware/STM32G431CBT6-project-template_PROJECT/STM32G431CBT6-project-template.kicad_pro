@@ -238,7 +238,12 @@
     "equivalence_files": []
   },
   "erc": {
-    "erc_exclusions": [],
+    "erc_exclusions": [
+      "lib_symbol_issues|825500|889000|b9b8d506-68d0-42a9-bccb-8f92cb835bee|00000000-0000-0000-0000-000000000000|||",
+      "no_connect_connected|1358900|749300|8e5a5b72-9413-4993-b85a-b704d77f1141|00000000-0000-0000-0000-000000000000|/92a86815-0425-4ac3-80bb-037195814139|/92a86815-0425-4ac3-80bb-037195814139|",
+      "no_connect_connected|1358900|774700|50c6010d-704e-41cd-aa43-4c1c303292c9|00000000-0000-0000-0000-000000000000|/92a86815-0425-4ac3-80bb-037195814139|/92a86815-0425-4ac3-80bb-037195814139|",
+      "no_connect_connected|1358900|800100|99d7c448-de30-4dce-b25d-8cd5e45383a3|00000000-0000-0000-0000-000000000000|/92a86815-0425-4ac3-80bb-037195814139|/92a86815-0425-4ac3-80bb-037195814139|"
+    ],
     "meta": {
       "version": 0
     },
@@ -453,7 +458,7 @@
     "pinned_symbol_libs": []
   },
   "meta": {
-    "filename": "template.kicad_pro",
+    "filename": "STM32G431CBT6-project-template.kicad_pro",
     "version": 1
   },
   "net_settings": {
@@ -663,6 +668,14 @@
     [
       "92a86815-0425-4ac3-80bb-037195814139",
       "Root"
+    ],
+    [
+      "dfcb8f05-be3a-41c5-9e3b-c3675eeb25f6",
+      "STM32G4"
+    ],
+    [
+      "d49b9775-32f5-4289-90a3-3501e0f5b517",
+      "USB-power"
     ]
   ],
   "text_variables": {}
